@@ -1,0 +1,124 @@
+/* Ensure the carousel item itself is taking up the full width */
+.carousel-item {
+    position: relative;
+    width: 100%; /* Full width of the carousel */
+  }
+  
+  /* Center the content of the carousel item */
+  .carousel-item > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%; /* Full width of the carousel item */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Adjust the width of the carousel controls to move them to the edges */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 2.5%; /* Smaller width to push controls to the edge */
+  }
+  
+  /* Adjust the position of the carousel controls for smaller screens */
+  @media (max-width: 768px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 10%;
+    }
+  }
+  
+  /* Additional styling for the carousel controls if needed */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    /* Adjust the size of the icons */
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Styling the arrows directly if needed */
+  .bi-arrow-left-circle-fill,
+  .bi-arrow-right-circle-fill {
+    font-size: 2rem; /* Or the size you prefer */
+    color: #333; /* Or the color you prefer */
+  }
+
+.component-car{
+    padding-left: 3rem !important;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  /* padding-left: 10px;  */
+  /* Adjust the padding as needed */
+  font-size: large; 
+  /* //Makes the container bigger by increasing font size */
+}
+
+.form-check-input {
+  /* margin-right: 5px; */
+ 
+  width: 1.5em; /* Makes the radio button larger */
+  height: 1.5em; 
+  /* Makes the radio button larger */
+  border-radius: 50%; /* Ensures it stays circular */
+  border: 2px solid; /* Makes the circle thicker */
+}
+
+.form-check-label {
+  padding-right: 40px;
+  padding-left: 10px;
+  font-size: normal; /* Increases the font size of the label */
+  font-weight: normal; /* Makes the label text bold */
+  /* Add any additional styles you want here */
+}
+
+.label{
+  font-size: large;
+  font-weight: bold;
+}
+
+.form-select{
+  width: 40%;
+  font-size: normal;
+  font-weight: normal;
+  border-color: #333;
+  border: 2px solid; 
+ 
+}
+
+
+.form-control{
+  display: flex;
+  /* align-items: center; */
+  width: 90%;
+  font-weight: normal;
+  border: 2px solid;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  /* Other styles as needed */
+}
+
+.submit-button{
+  display: flex;
+  width: 20%;
+  height: 43px;
+  padding: 35px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #2F82C7;
+  font-size: larger;
+  font-weight: bolder;
+
+} 

@@ -1,0 +1,28 @@
+/* MyForm.css */
+
+.my-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .my-form-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .my-form-control {
+    margin-bottom: 10px;
+  }
+  
+  .my-submit-button {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+  }
+  
+  .my-submit-button:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  
+  /* Add additional styling as needed */
+  

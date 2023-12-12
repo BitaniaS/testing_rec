@@ -1,0 +1,108 @@
+/* LandingPage.css */
+
+
+
+.landing-container {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    min-height: 100vh;
+    padding-top: 50px;
+    background: #eaf3f9;
+}
+
+
+.landing-container.blur {
+    filter: blur(5px) !important; /* Adjust the pixel value to the desired blur amount */
+    pointer-events: none; /* Disables interactions with the blurred content */
+  }
+
+
+/* Ensure the modal is above the blurred content and is not blurred itself */
+.modal-content {
+    position: relative;
+    z-index: 1050; /* Bootstrap's default z-index for modals */
+    pointer-events: auto; /* Re-enable pointer events so the modal can be interacted with */
+    background-color: #eaf3f9;
+  }
+  
+  /* Optionally, if you want to add additional backdrop styles */
+ .modal-backdrop.show {
+    opacity: 0.5; /* Adjust for desired opacity level */
+ }
+
+
+  .carousel-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 10; /* Ensures it's above other content */
+  }
+  
+  /* Add this to remove blur from the carousel itself */
+  .carousel-overlay > * {
+    filter: none;
+    pointer-events: auto; /* Re-enables interactions for the carousel */
+  }
+
+.landing-container h1 { 
+    font-family: "Times New Roman", Times, serif  !important;
+    font-style: italic;
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    color: #2F82C7;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+.landing-container p {
+    font-family: "Times New Roman", Times, serif  !important;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #599BD2;
+    font-family: Wendy One;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    margin-left: 5rem;
+}
+
+.landing-container .btn-primary {
+    font-family: "Times New Roman", Times, serif  !important;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 3rem;
+    background-color: #2F82C7;
+    margin-left: 30rem;
+}
+
+.bottom-left-svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%; /* this adjusts the size of the svg */
+    height: auto;
+}
+
+.illustration {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+/* .illustration img {
+    max-width: 100%;
+    height: auto;
+} */
